@@ -17,7 +17,7 @@ public class BaiTap_1_BinarySearch {
             }
             else if(left > right)
             {
-                return array.length;
+                return 0;
             }
             else
             {
@@ -43,8 +43,15 @@ public class BaiTap_1_BinarySearch {
             
             result = FindNum(searchKey, array);
         }
-
-        System.out.println("Tim thay " + searchKey + " tai vi tri " + result + 1);
+        
+        if ( result != 0)
+        {
+            System.out.println("Tim thay " + searchKey + " tai vi tri " + result + 1);
+        }
+        else
+        {
+            System.out.println("Khong tim thay!");
+        }
     }
     
 }
