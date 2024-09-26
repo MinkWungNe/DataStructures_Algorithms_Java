@@ -34,10 +34,10 @@ public class BaiTap_1_CacGiaiThuatSort {
             int j;
             for ( j = i + 1; j < temp.length; j++)  // Min
             {   
-                if (min > temp[j])
+                if (temp[min] > temp[j])
                 {
                     min = j;
-                }
+                } 
             }
             int tempnum = temp[i];
             temp[i] = temp[min];
@@ -70,23 +70,26 @@ public class BaiTap_1_CacGiaiThuatSort {
     }
 
     public static void main(String[] args) {
-        int array[] = {9,5,2,6,8,1,3,7,4};
+        int array[] = {3,5,9,6,8,1,2,7,4};
 
         int bubblesortarr[] = BubbleSort(array);
+        int selectionsortarr[] = SelectionSort(array);
+        int insertionsortarr[] = InsertionSort(array);
+        
         for (int i : bubblesortarr)
         {
             System.out.print(i + " ");
         }
         System.out.println();
 
-        int selectionsortarr[] = SelectionSort(array);
+        
         for (int i : selectionsortarr)
         {
             System.out.print(i + " ");
         }
         System.out.println();
 
-        int insertionsortarr[] = InsertionSort(array);
+        
         for (int i : insertionsortarr)
         {
             System.out.print(i + " ");
