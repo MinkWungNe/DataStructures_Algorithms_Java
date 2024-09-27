@@ -80,6 +80,6 @@ public class BaiTap_11_SanXuatLich {
             soNgay = console.nextInt();
 
             InLich(ngayDau, soNgay);
-        }
+        } 
     }
 }
