@@ -27,6 +27,7 @@ public class BaiTap_2_Vehinh {
             {
                 drawSymbol(symbols[line]);
             }
+            System.out.println(line + " % 2 = " + line % 2);
 
             if (line % 2 == 0)
             {
@@ -36,7 +37,7 @@ public class BaiTap_2_Vehinh {
             {
                 space += 3;
             }
-
+            
             System.out.println();
         }
 
