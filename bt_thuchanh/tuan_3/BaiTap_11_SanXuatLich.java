@@ -4,7 +4,6 @@ public class BaiTap_11_SanXuatLich {
     {
         boolean isADay = false;
         int NgayTrongTuan = 0;
-        int TongSoNgay = 0;
         int StartDay = 0;
         int Day = 1;
         System.out.println("  Sun    Mon    Tue    Wed    Thu    Fri    Sat");
