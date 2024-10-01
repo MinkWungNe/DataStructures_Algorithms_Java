@@ -4,10 +4,10 @@ import java.util.Scanner;
 public class BaiTap_1_Money {
     public static void main(String[] args) {
         int Money;
-        Scanner console = new Scanner(System.in);
-
-        System.out.print("Nhap so tien: ");
-        Money = console.nextInt();
+        try (Scanner console = new Scanner(System.in)) {
+            System.out.print("Nhap so tien: ");
+            Money = console.nextInt();
+        }
 
         if (Money <= 500)
         {
