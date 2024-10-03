@@ -1,4 +1,3 @@
-package bt_thuchanh.tuan_4;
 import java.util.Scanner;
 
 public class BaiTap_1_Money {
