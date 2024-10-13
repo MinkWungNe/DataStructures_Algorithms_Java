@@ -1,4 +1,3 @@
-package bt_thuchanh.tuan_7_Class;
 public class Point {
     int x;
     int y;
