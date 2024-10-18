@@ -8,7 +8,7 @@ public class BaiTap_2_TinhNhietDo2 {
         double average;
         int Hotdays = 0;
 
-        System.out.print("Ban muon nhap nhiet do bao nhieu ngay?: ");
+        System.out.print("Ban muon nhap nhiet do bao nhieu ngay ?: ");
         days = console.nextInt();
         double arr[] = new double[days];
 
@@ -23,7 +23,7 @@ public class BaiTap_2_TinhNhietDo2 {
         average = sum / days;
 
         // Tinh so ngay nhiet do > trung binh
-        for (int i = 0; i < arr.length - 1; i++)
+        for (int i = 0; i < arr.length; i++)
         {
             if (arr[i] > average)
             {
