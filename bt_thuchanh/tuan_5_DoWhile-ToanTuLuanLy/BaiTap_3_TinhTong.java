@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class BaiTap_3_TinhTong {
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         Scanner console = new Scanner(System.in);
         int sum = 0;
         int count = 1;
