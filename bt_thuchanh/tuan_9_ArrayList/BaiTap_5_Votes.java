@@ -56,7 +56,7 @@ public class BaiTap_5_Votes {
         System.out.println("Ung vien" + "    " + "So phieu" + "    " + "Ty le bau (%)");
         for (int i = 0; i < UngVien.size(); i++)
         {
-            System.out.println("   " + UngVien.get(i) + "   " + "        " + VotesCount[i] + "             " + 2 + "%");
+            System.out.println("   " + UngVien.get(i) + "   " + "        " + VotesCount[i] + "             " + 2 + "%");    // chua tinh duoc %
         }
         System.out.println("Nguoi chien thang la: " + "all");
     }
