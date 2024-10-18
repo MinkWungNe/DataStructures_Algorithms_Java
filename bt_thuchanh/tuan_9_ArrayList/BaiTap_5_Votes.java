@@ -32,6 +32,32 @@ public class BaiTap_5_Votes {
         // Đếm phiếu
         int VotesCount[] = new int[4];
 
-        
+        for (int i = 0; i < PhieuBau.size(); i++)
+        {
+            if (PhieuBau.get(i).equals("A"))
+            {
+                VotesCount[0]++;
+            }
+            if (PhieuBau.get(i).equals("B"))
+            {
+                VotesCount[1]++;
+            }
+            if (PhieuBau.get(i).equals("C"))
+            {
+                VotesCount[2]++;
+            }
+            if (PhieuBau.get(i).equals("D"))
+            {
+                VotesCount[3]++;
+            }
+        }
+
+        // Hiển thị kết quả
+        System.out.println("Ung vien" + "    " + "So phieu" + "    " + "Ty le bau (%)");
+        for (int i = 0; i < UngVien.size(); i++)
+        {
+            System.out.println("   " + UngVien.get(i) + "   " + "        " + VotesCount[i] + "             " + 2 + "%");
+        }
+        System.out.println("Nguoi chien thang la: " + "all");
     }
 }
