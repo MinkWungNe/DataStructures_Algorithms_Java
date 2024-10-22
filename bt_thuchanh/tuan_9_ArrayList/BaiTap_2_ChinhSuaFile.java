@@ -22,6 +22,7 @@ public class BaiTap_2_ChinhSuaFile {
             if (BannedWords.contains(result))
             {
                 System.out.println("Da tim thay tu bi Ban: " + result);
+                console.remove();
             }
         }
 
