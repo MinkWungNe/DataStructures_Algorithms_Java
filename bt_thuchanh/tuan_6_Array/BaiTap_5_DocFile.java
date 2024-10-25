@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class BaiTap_5_DocFile {
     public static void main(String[] args) throws FileNotFoundException {
-        String filePath = System.getProperty("user.dir") + File.separator + "tally.txt";
-        Scanner console = new Scanner(new File(filePath));
+        Scanner console = new Scanner(new File("tally.txt"));
 
         int counter[] = new int[5]; // Mảng chứa để đếm số
 
