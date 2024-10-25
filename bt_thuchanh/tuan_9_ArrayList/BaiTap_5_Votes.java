@@ -9,7 +9,7 @@ public class BaiTap_5_Votes {
     public static void main(String[] args) throws FileNotFoundException{
         ArrayList<String> UngVien = new ArrayList<>();
         ArrayList<String> PhieuBau = new ArrayList<>();
-        String filePath = System.getProperty("user.dir") + File.separator + "phieu.txt";
+        String filePath = "phieu.txt";
         try (Scanner console = new Scanner(new File(filePath))) {
             while (console.hasNext())
             {
