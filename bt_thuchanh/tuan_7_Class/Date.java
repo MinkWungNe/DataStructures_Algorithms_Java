@@ -17,14 +17,15 @@ public class Date {
 
     public void addWeeks (int week)
     {
-        int temp = week % 4;
-        if (temp == 0)
+        int dayToAdd = week * 7;
+        for (int i = 0; i <= dayToAdd; i++)
         {
-            month++;
-        }
-        else
-        {
-            day += week * 7;
+            if (day == 30)
+            {
+                month++;
+                day = 0;
+            }
+            else{ day++;}
         }
     }
 
