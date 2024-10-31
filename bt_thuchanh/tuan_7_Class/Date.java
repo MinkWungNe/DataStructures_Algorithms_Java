@@ -15,9 +15,18 @@ public class Date {
         this.day += day;
     }
 
-    public void addWeeks (int month)
+    public void addWeeks (int week)
     {
-        this.month += month;
+        int dayToAdd = week * 7;
+        for (int i = 0; i <= dayToAdd; i++)
+        {
+            if (day == 30)
+            {
+                month++;
+                day = 0;
+            }
+            else{ day++;}
+        }
     }
 
     public int daysTo(Date Other)

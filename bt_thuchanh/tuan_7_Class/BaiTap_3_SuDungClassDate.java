@@ -18,5 +18,8 @@ public class BaiTap_3_SuDungClassDate {
 
         String toDate = d1.ToString();
         System.out.println(toDate);
+        d1.addWeeks(4);
+        toDate = d1.ToString();
+        System.out.println(toDate);
     }
 }
