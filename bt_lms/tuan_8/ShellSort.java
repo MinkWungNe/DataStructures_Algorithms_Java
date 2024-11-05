@@ -41,7 +41,7 @@ public class ShellSort {
         System.out.println("Array before sorting");
         printArray(arr);
 
-        ShellSort ob = new ShellSort();
+        ShellSort ob = new ShellSort();     // or add 'static ' at line 11 and change these two lines to sort(arr)
         ob.sort(arr);
 
         System.out.println("Array after sorting");
