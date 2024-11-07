@@ -3,24 +3,17 @@ public class Bai_9 {
     {
         for (int i = 0; i < n; i++)
         {
-            System.out.println("     ");
+            System.out.print("     ");
         }
     }
 
     public static void StickMan(int part)
     {
         switch (part) {
-            case 0:
-                System.out.print("  .  ");
-                break;
-            case 1:
-                System.out.print(" /|\\ ");
-                break;
-            case 2:
-                System.out.print(" / \\ ");
-                break;
-            default:
-                break;
+            case 0 -> System.out.print("  .  ");
+            case 1 -> System.out.print(" /|\\ ");
+            case 2 -> System.out.print(" / \\ ");
+            default -> {}
         }
     }
     
@@ -34,45 +27,39 @@ public class Bai_9 {
 
     public static void main(String[] args) {
         int space_first = 4, space_last = 0;
-        //int i,j;    // i = dòng; j = cột
-        // for (i = 0; i <= 16; i++)
-        // {   
-        //     for (j = 0; j <= 32; j++)
-        //     {
-        //         if (j == 32) 
-        //         {
-        //             System.out.println("*");
+        for (int i = 0; i <= 15; i++)
+        {   
+            if (i == 15)            // Hàng cuối
+            {
+                Draw(32);
+                return;
+            } 
 
-        //         }
-        //     }
+            int space = i % 3;
 
-        //     if (i == 16)
-        //     {   
-        //         for (j = 0; j <= 31; j++)
-        //         {
-        //             System.out.print("* ");
-        //         }
-        //     }
-        // }
+            Space(space_first);     // Khoảng trống đầu
 
-        for (int i = 0; i <= 16; i++)
-        {
-            int space = i % 4;
-            StickMan(space);
+            StickMan(space);        // Vẽ người que
 
-            if (space == 0)
+            if (space == 0)         // Vẽ cầu thang
             {
                 Draw(6);
+                Space(space_last);
             }
             else if (space == 1 || space == 2)
             {
                 Draw(1);
+                Space(space_last + 1);
+            }
+            
+            Draw(1);            // Kết thúc hàng
+            
+            if (space == 2)         // Điều chỉnh khoảng cách đầu và cuối
+            {
+                space_first--;
+                space_last++;
             }
             System.out.println();
-            for (int j = 0; j <= 32; j++)
-            {
-                
-            }
         }
     }
 }
